@@ -20,7 +20,10 @@ In general, the PT1000 is more suitable than the PT100 for small measuring range
   
 1 .- High precission discrete design. The  discrete  design  requires  a  precision  amplifier  and  current  source.
 
-2 .- The integrated system approach uses MAX31865  RTD-to-digital  converter. This  device  is  well  suited for high-precision applications by providing a 0.03125°C resolution across a -200°C to +850°C temperature range, with a 0.5°C level of accuracy.
+2 .- The integrated system approach:
+    a)uses MAX31865  RTD-to-digital  converter. This  device  is  well  suited for high-precision applications by providing a 0.03125°C resolution across a -200°C to +850°C temperature range, with a 0.5°C level of accuracy.
+
+   b) MAXREFDES67# reference design implements the 4-wire ratiometric configuration and polynomial approximation
 
 ## Transference equation
 For a platinum RTD, [the Callendar-Van Dusen equation](https://www.maximintegrated.com/en/design/technical-documents/app-notes/6/6262.html) describes the relationship between resistance and temperature as:
