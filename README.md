@@ -31,6 +31,7 @@ In general, the PT1000 is more suitable than the PT100 for small measuring range
 
 [Maxim TN: Achieve High-Accuracy Temperature Measurement in Your Precision Designs ](https://www.maximintegrated.com/content/dam/files/design/technical-documents/design-solutions/ds67-achieve-high-accuracy-temperature-measurement-in-your-precision-designs.pdf)
 
+[ APPLICATION NOTE 6262 RTD Measurement System Design Essentials](https://www.maximintegrated.com/en/design/technical-documents/app-notes/6/6262.html)
 [MAX31865 Datasheet](https://www.maximintegrated.com/en/products/interface/sensor-interface/MAX31865.html])
 
 [Symbolo y huella SnapEDA](https://www.snapeda.com/parts/MAX31865AAP+/Maxim%20Integrated/view-part/?ref=digikey)
