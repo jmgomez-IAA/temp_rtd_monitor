@@ -16,6 +16,10 @@ In general, the PT1000 is more suitable than the PT100 for small measuring range
 
 ## Designs
 
+1 .- The  discrete  design  requires  a  precision  amplifier  and  current  source.
+
+2 .- The integrated system approach uses MAX31865  RTD-to-digital  converter. This  device  is  well  suited for high-precision applications by providing a 0.03125°C resolution across a -200°C to +850°C temperature range, with a 0.5°C level of accuracy.
+
 ## Distributor
 
 | Distributor |    ref-number   |  price | Items minimos | plazo dias | 
@@ -24,7 +28,10 @@ In general, the PT1000 is more suitable than the PT100 for small measuring range
 | rs-online   |     190-1435    | 5,25 € | 5             |   3 + 1    |
 
 ## Resources
+
 [Maxim TN: Achieve High-Accuracy Temperature Measurement in Your Precision Designs ](https://www.maximintegrated.com/content/dam/files/design/technical-documents/design-solutions/ds67-achieve-high-accuracy-temperature-measurement-in-your-precision-designs.pdf)
+
+[MAX31865 Datasheet](https://www.maximintegrated.com/en/products/interface/sensor-interface/MAX31865.html])
 
 [Symbolo y huella SnapEDA](https://www.snapeda.com/parts/MAX31865AAP+/Maxim%20Integrated/view-part/?ref=digikey)
 
