@@ -22,6 +22,26 @@ In general, the PT1000 is more suitable than the PT100 for small measuring range
 
 2 .- The integrated system approach uses MAX31865  RTD-to-digital  converter. This  device  is  well  suited for high-precision applications by providing a 0.03125°C resolution across a -200°C to +850°C temperature range, with a 0.5°C level of accuracy.
 
+## Transference equation
+For a platinum RTD, [the Callendar-Van Dusen equation](https://www.maximintegrated.com/en/design/technical-documents/app-notes/6/6262.html) describes the relationship between resistance and temperature as:
+
+R(t) = R0 × (1 + A × t +B × t2 + (t - 100) × C × t3),
+
+where
+
+R(t) = RTD resistance
+t = temperature
+R0 = resistance of the RTD at 0°C
+A = 3.908 × 10-3
+B = -5.775 × 10-7
+C = -4.183 × 10-12 when t < 0°C
+C = 0 when t > 0°C
+
+The solution is to use: 
+1.- Aproximmation
+
+2.- Look-up tables
+
 ## Distributor
 
 | Distributor |    ref-number   |  price | Items minimos | plazo dias | 
