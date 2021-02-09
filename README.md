@@ -16,7 +16,9 @@ In general, the PT1000 is more suitable than the PT100 for small measuring range
 
 ## Designs
 
-1 .- The  discrete  design  requires  a  precision  amplifier  and  current  source.
+0 .-  Voltage dividir with Arduino ADCs. A Pull-Up resistor fixes the current through the PT1000, and a 10kOhm voltage divider allows the Arduino ADC to read the value of the resistor.
+  
+1 .- High precission discrete design. The  discrete  design  requires  a  precision  amplifier  and  current  source.
 
 2 .- The integrated system approach uses MAX31865  RTD-to-digital  converter. This  device  is  well  suited for high-precision applications by providing a 0.03125°C resolution across a -200°C to +850°C temperature range, with a 0.5°C level of accuracy.
 
