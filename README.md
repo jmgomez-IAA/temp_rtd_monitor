@@ -47,6 +47,8 @@ Digi-key: 223-1801-ND  Precio: 2.88€/u
 
    	d) AD7713 , The AD7713 is a complete analog front end for low frequency measurement applications. The device accepts low level signals directly from a transducer or high level signals (4 ⫻ V REF ) and outputs a serial digital word.
 
+   	e) [ADS1115 Seed Studios hut for rpi3 ](https://wiki.seeedstudio.com/4-Channel_16-Bit_ADC_for_Raspberry_Pi-ADS1115/)
+
 ## ADC value to resistance
 
 
