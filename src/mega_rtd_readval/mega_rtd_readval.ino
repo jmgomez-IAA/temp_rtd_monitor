@@ -12,7 +12,8 @@
   ==
   The fasted approximation is to use a look-up table (rtd_resistence).
 
-  The most accurate version is to resolve the equation of the temperature. 
+  The most accurate version is to resolve the equation of the temperature
+  and generate the custom look-up table. 
   For a platinum RTD, the Callendar-Van Dusen equation describes the 
   relationship between resistance and temperature as: 
 
@@ -31,9 +32,8 @@
 
   [1] https://www.maximintegrated.com/en/design/technical-documents/app-notes/6/6262.html
 
-  This example code is in the public domain.
+  We are using the standard table and interpolate the value between grades.
 
-  http://www.arduino.cc/en/Tutorial/AnalogInput
 */
 
 constexpr float rtd_resistence[] = {
@@ -54,15 +54,6 @@ int sensorPin = A0;    // select the input pin for the potentiometer
 int ledPin = 13;      // select the pin for the LED
 int sensorValue = 0;  // variable to store the value coming from the sensor
 int outputValue = 0;
-
-
-float CoefR6 = 1.6030e-13;
-float CoefR5 = 2.0936e-10;
-float CoefR4 = 3.6239e-8;
-float CoefR3 = 4.2504e-6;
-float CoefR2 = 2.5646e-3;
-float CoefR1 = 2.2233;
-float CoefR0 = 2.4204e2;
 
 void setup() {
   // declare the ledPin as an OUTPUT:
@@ -89,8 +80,7 @@ void loop() {
   // interpolate the temperature value
 
   float temp_inter =(temp_aprox-1)+((res_val - rtd_resistence[temp_aprox-1])/(rtd_resistence[temp_aprox]-rtd_resistence[temp_aprox-1]));
-  
-  //t = -1.6030e -13 × r6 + 2.0936e -10 × r5 -3.6239e -8 × r4 -4.2504e -6 × r3 + 2.5646e -3 × r2 + 2.2233 × r -2.4204e2  
+ 
 
   
 // print the results to the Serial Monitor:

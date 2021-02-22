@@ -1,9 +1,17 @@
 # RTD_to_Digital_converter
-Read temperature values from an RTD
+Read temperature as accurate as possible with Temperature RTD PT1000.
 
 The project is intended to be included in the FreqUent SenSor PrOjecT (FUSSPOT).
 
-## PT100 vs. PT1000
+##Temperature Transducers
+A Temperature Transducer is a device that converts the thermal quantity into any physical quantity such as mechanical energy, pressure and electrical signals 
+
+(Temperature Transducers: What Are They? Types & Examples)[https://www.electrical4u.com/temperature-transducers/]
+
+## Resistance Temperture Detector (RTD) 
+
+[Las termorresistencias y su representación según las normas IEC y ASTM](https://www.bloginstrumentacion.com/productos/termorresistencias-su-representacin-segn-las-normas-iec-astm/)
+### PT100 vs. PT1000
 
 The primary difference between the two types is the internal resistance. The PT100 has exactly 100 ohms at 0 degrees Celsius, while the PT1000 has exactly 1000 ohms at 0 degrees Celsius. Although both sensors are quite accurate, there are some differences and also criteria by which the appropriate type is chosen.
 
@@ -15,17 +23,40 @@ The PT1000 has a much higher resolution than the PT100. At 20 degrees Celsius, t
 In general, the PT1000 is more suitable than the PT100 for small measuring ranges (-40 to +200 °C).
 
 ## Designs
+### Tranducer
+RTD Class T (F 0.1) from TE [PTF- FAMILY](ds_rtd_te_ptfa2_Platinum_Temperature_Sensors)
+
+These resistor is class T (F 0.1) characteristics are range [-50,250]ºC and precision +-(0.1+0.0017[t]).
+
+PartNumber: PTFD102T1A0 1000 Ohms, 2.0 mm x 5.0 mm, F 0.1 (T = AA), Ag-wire NB-PTCO-151
+Digi-key: 223-1801-ND  Precio: 2.88€/u
+
+### Adquisition
+
 
 0 .-  Voltage dividir with Arduino ADCs. A Pull-Up resistor fixes the current through the PT1000, and a 10kOhm voltage divider allows the Arduino ADC to read the value of the resistor.
   
 1 .- High precission discrete design. The  discrete  design  requires  a  precision  amplifier  and  current  source.
 
 2 .- The integrated system approach:
-    a)uses MAX31865  RTD-to-digital  converter. This  device  is  well  suited for high-precision applications by providing a 0.03125°C resolution across a -200°C to +850°C temperature range, with a 0.5°C level of accuracy.
+    a) **MAX31865**  RTD-to-digital  converter. This  device  is  well  suited for high-precision applications by providing a 0.03125°C resolution across a -200°C to +850°C temperature range, with a 0.5°C level of accuracy. Max accuracy is 0.03125ºC.
 
-   b) MAXREFDES67# reference design implements the 4-wire ratiometric configuration and polynomial approximation
+   	b) MAXREFDES67# reference design implements the 4-wire ratiometric configuration and polynomial approximation.
+
+   	c) ADS124x, The ADS1246, ADS1247, and ADS1248 devices are precision, 24-bit analog-to-digital converters (ADCs) that include many integrated features to reduce system cost and component count for sensor measurement applications.
+
+   	d) AD7713 , The AD7713 is a complete analog front end for low frequency measurement applications. The device accepts low level signals directly from a transducer or high level signals (4 ⫻ V REF ) and outputs a serial digital word.
+
+## ADC value to resistance
+
+
 
 ## Transference equation
+
+The most usual approximation to convert RTD value to temperature is to use a look-up table, i.e. doc/dwg_pT1000_resistance_table.png. 
+
+Those table, usually have a C degree  resolution, in case more preccision is required the Callendar-Van Duse equation migth be used.
+
 For a platinum RTD, [the Callendar-Van Dusen equation](https://www.maximintegrated.com/en/design/technical-documents/app-notes/6/6262.html) describes the relationship between resistance and temperature as:
 
 R(t) = R0 × (1 + A × t +B × t2 + (t - 100) × C × t3),
@@ -40,10 +71,6 @@ B = -5.775 × 10-7
 C = -4.183 × 10-12 when t < 0°C
 C = 0 when t > 0°C
 
-The solution is to use: 
-1.- Aproximmation
-
-2.- Look-up tables
 
 ## Distributor
 
