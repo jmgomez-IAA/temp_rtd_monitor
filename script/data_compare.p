@@ -9,7 +9,7 @@ reset
 #Output png
 # Set the output to a png file 
 set terminal png size 1280,720
-set output 'res/lk_vs_ads1248.png'
+set output 'res/lk_vs_ads1248_wfilter.png'
 
 # Line styles
 set border linewidth 1.5
@@ -32,4 +32,4 @@ set ylabel 'Degree C'
 set grid
 
 # Data Files
-plot 'data/bb_fil.dat' using 6:4 with lines title "ADS1248", 'data/lk_fil.dat' using 6:4 with lp title "Lakeshore"
+plot 'data/lk_fil_3-17-21_normalizado.dat' using 6:4 with lines title "ADS1248", 'data/ads1248_fil_3-17-21_normalizado.dat' using 6:4 with lines title "Lakeshore"
