@@ -102,3 +102,5 @@ A driver for the MAX31865 RTD-to-Digital converter, written using/for the esp-id
 [SomeQ&A on Arduino forum](https://forum.arduino.cc/index.php?topic=629616.0)
 Una consulta si voy a usar 5 MAX31865 en un arduino mega, los pines SPI son 53, 51 y 50  para CS, DI, DO y CLK respectivamente, se puede usar para CS el pin 22, 23, 24 y 25, ya que son el control switch?
 
+https://sequentmicrosystems.com/collections/all-io-cards/products/rtd-data-acquisition-card-for-rpi
+

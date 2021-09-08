@@ -1,0 +1,276 @@
+
+
+*******************************************************************************
+Mon Feb 22 18:57:41 2021
+
+
+FIT:    data read from 'data/datos_sim_pt1000_oamp_3V3.dat' using 2:0
+        format = x:z
+        #datapoints = 100
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 317303            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.992356
+
+initial set of free parameter values
+
+m               = 1
+q               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.12027
+rel. change during last iteration : -3.30559e-14
+
+degrees of freedom    (FIT_NDF)                        : 98
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.269547
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0726559
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 81.0514          +/- 0.07569      (0.09338%)
+q               = -23.9047         +/- 0.07453      (0.3118%)
+
+
+correlation matrix of the fit parameters:
+
+               m      q      
+m               1.000 
+q              -0.932  1.000 
+
+
+*******************************************************************************
+Mon Feb 22 18:58:15 2021
+
+
+FIT:    data read from 'data/datos_sim_pt1000_oamp_3V3.dat' using 2:0
+        format = x:z
+        #datapoints = 100
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 317303            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.992356
+
+initial set of free parameter values
+
+m               = 1
+q               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.12027
+rel. change during last iteration : -3.30559e-14
+
+degrees of freedom    (FIT_NDF)                        : 98
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.269547
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0726559
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 81.0514          +/- 0.07569      (0.09338%)
+q               = -23.9047         +/- 0.07453      (0.3118%)
+
+
+correlation matrix of the fit parameters:
+
+               m      q      
+m               1.000 
+q              -0.932  1.000 
+
+
+*******************************************************************************
+Mon Feb 22 18:59:06 2021
+
+
+FIT:    data read from 'data/datos_sim_pt1000_oamp_3V3.dat' using 2:0
+        format = x:z
+        #datapoints = 100
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 317303            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.992356
+
+initial set of free parameter values
+
+m               = 1
+q               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.12027
+rel. change during last iteration : -3.30559e-14
+
+degrees of freedom    (FIT_NDF)                        : 98
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.269547
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0726559
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 81.0514          +/- 0.07569      (0.09338%)
+q               = -23.9047         +/- 0.07453      (0.3118%)
+
+
+correlation matrix of the fit parameters:
+
+               m      q      
+m               1.000 
+q              -0.932  1.000 
+
+
+*******************************************************************************
+Mon Feb 22 19:02:59 2021
+
+
+FIT:    data read from 'data/datos_sim_pt1000_oamp_5V.dat' using 2:0
+        format = x:z
+        #datapoints = 100
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 311692            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.26977
+
+initial set of free parameter values
+
+m               = 1
+q               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.1202
+rel. change during last iteration : -6.57384e-14
+
+degrees of freedom    (FIT_NDF)                        : 98
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.269546
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0726551
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 53.5077          +/- 0.04997      (0.09338%)
+q               = -23.9047         +/- 0.07453      (0.3118%)
+
+
+correlation matrix of the fit parameters:
+
+               m      q      
+m               1.000 
+q              -0.932  1.000 
+
+
+*******************************************************************************
+Mon Feb 22 19:03:22 2021
+
+
+FIT:    data read from 'data/datos_sim_pt1000_oamp_5V.dat' using 2:0
+        format = x:z
+        #datapoints = 100
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 311692            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 1.26977
+
+initial set of free parameter values
+
+m               = 1
+q               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.1202
+rel. change during last iteration : -6.57384e-14
+
+degrees of freedom    (FIT_NDF)                        : 98
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.269546
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0726551
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 53.5077          +/- 0.04997      (0.09338%)
+q               = -23.9047         +/- 0.07453      (0.3118%)
+
+
+correlation matrix of the fit parameters:
+
+               m      q      
+m               1.000 
+q              -0.932  1.000 
+
+
+*******************************************************************************
+Mon Feb 22 19:04:12 2021
+
+
+FIT:    data read from 'data/datos_sim_pt1000_oamp_3V3.dat' using 2:0
+        format = x:z
+        #datapoints = 100
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 317303            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.992356
+
+initial set of free parameter values
+
+m               = 1
+q               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.12027
+rel. change during last iteration : -3.30559e-14
+
+degrees of freedom    (FIT_NDF)                        : 98
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.269547
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0726559
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = 81.0514          +/- 0.07569      (0.09338%)
+q               = -23.9047         +/- 0.07453      (0.3118%)
+
+
+correlation matrix of the fit parameters:
+
+               m      q      
+m               1.000 
+q              -0.932  1.000 
